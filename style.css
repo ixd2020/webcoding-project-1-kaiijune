@@ -6,15 +6,61 @@ body {
 }
 
 h1 {
-  font-style: italic;
+  font-style: bold;
   color: #373fff;
 }
 
-table, th, td {
-  border: 3px dotted blue;
-  border-collapse: collapse;
+ul{
+  display:flex;
+  
 }
-th, td {
-  padding: 5px;
-  text-align: left;    
+
+ul li{
+  list-style-type:none;
+  padding:20px;
+  
+}
+
+ul li a{
+  text-decoration:none;
+}
+
+/*change justify content to preferred flex-start|flex-end|center|space-between|space-around*/
+nav{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.search img{
+  width:20%;
+}
+
+.hero{
+  background-image:url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist.jpg?v=1604671994014);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro{
+  text-align:right;
+}
+
+.feature{
+  display:flex;
+}
+
+.text img{
+  width:100%;
+}
+
+.text{
+  margin:20px;
+}
+
+#content{
+  text-align:center;
 }
