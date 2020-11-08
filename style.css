@@ -10,7 +10,7 @@ h1 {
   color: #373fff;
 }
 
-ul{
+/*ul{
   display:flex;
   
 }
@@ -25,7 +25,7 @@ ul li a{
   text-decoration:none;
 }
 
-/*change justify content to preferred flex-start|flex-end|center|space-between|space-around*/
+/*change justify content to preferred flex-start|flex-end|center|space-between|space-around
 nav{
   display:flex;
   justify-content:flex-end;
@@ -35,7 +35,9 @@ nav{
   width:20%;
 }
 
-.hero{
+*/
+
+/*.hero{
   background-image:url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist.jpg?v=1604671994014);
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,6 +46,7 @@ nav{
   overflow: hidden;
   position: relative;
 }
+
 
 .intro{
   text-align:right;
@@ -64,3 +67,4 @@ nav{
 #content{
   text-align:center;
 }
+*/
