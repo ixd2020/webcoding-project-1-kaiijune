@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+    <a href="index.html">Go to index</a>
+    
+    <h2>Grid of Boxes</h2>
+    <p>Float boxes side by side:</p>
+
+    <div class="clearfix">
+      <div class="box redbox threecol">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor
+          elit id lobortis tincidunt. Praesent at bibendum lectus. Fusce sed
+          euismod turpis. Vivamus pulvinar quis mauris sit amet faucibus. Proin
+          vel mauris faucibus, pretium turpis eu, viverra odio. Maecenas ac
+          porta arcu. Nam posuere, magna nec mattis ullamcorper, augue augue
+          placerat felis, vitae ornare orci neque in justo. In maximus mattis
+          velit id tincidunt. Aenean purus eros, feugiat in ullamcorper ut,
+          consequat tempor eros. Sed vulputate imperdiet risus, eu tincidunt
+          nibh luctus vitae. Donec finibus mauris nec arcu efficitur, eu luctus
+          nibh luctus. Proin vestibulum odio et ex luctus volutpat. Praesent
+          tristique eget turpis at dignissim. Quisque congue orci eu quam
+          finibus, sed commodo nunc volutpat. Nullam commodo interdum odio, et
+          molestie libero euismod molestie.
+        </p>
+      </div>
+      <div class="box bluebox threecol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box yellowbox threecol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box greenbox twocol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box blackbox twocol">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box redbox onecol">
+        <p>Some text inside the box.</p>
+      </div>
+    </div>
+
+    
+    
+    <p>
+      Note that we also use the clearfix hack to take care of the layout flow,
+      and that add the box-sizing property to make sure that the box doesn't
+      break due to extra padding. Try to remove this code to see the effect.
+    </p>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
