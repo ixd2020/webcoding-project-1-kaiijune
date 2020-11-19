@@ -3,3 +3,15 @@
 
 // prints "hi" in the browser's dev tools console
 console.log("hi");
+
+
+function mobilemenu() {
+            var x = document.getElementById("mytopnav");
+
+            if (x.className === "topnav") {
+                x.className = "topnav responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+  

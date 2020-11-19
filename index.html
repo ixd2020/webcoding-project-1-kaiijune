@@ -1,32 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <title>Hello!</title>
-    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FAsset%202.png?v=1605709435805"
+      type="image/x-icon"
+    />
+    <title>Home</title>
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
+    <header>
+      <nav class="topnav" id="mytopnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
 
-    <h1>
-      Index
-    </h1>
-    
-    <a href="csstest.html">Go to Css float</a>
-    <a href="csstest2.html">Go to Css float 2</a>
-    <a href="#">dont touch me! i am a unvisited link</a>
-    
+          <li><a href="about.html">About artist</a></li>
+
+          <li><a href="woodprint.html">Wood printing</a></li>
+
+          <li><a href="work.html">Art works </a></li>
+        </ul>
+
+        <div class="hamburger">
+          <a href="#" onclick="mobilemenu()"
+            ><i class="fa fa-bars fa-2x"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="intro">
+        <h1>Katsushika Hokusai</h1>
+        <h4>Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)</h4>
+        <button class="explore" style="vertical-align:middle">
+          <span><a href="#content">Explore...</a></span>
+        </button>
+      </div>
+    </div>
+    <div id="content">
+      <h1>
+        Featured works
+      </h1>
+    </div>
+
+    <div class="feature">
+      <div class="pic">
+        <img
+          src="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist4.jpg?v=1605713412830"
+        />
+        <div class="text">
+          <h3>The Inume Pass in Kai Province (Kōshū Inume tōge)</h3>
+          <p>
+            from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)
+          </p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <img
+          src="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist2.jpg?v=1605713402278"
+        />
+        <div class="text">
+          <h3>Groups of Mountain Climbers (Shojin tozan)</h3>
+          <p>
+            from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)
+          </p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <img
+          src="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist5.jpg?v=1605713417454"
+        />
+        <div class="text">
+          <h3>Young Woman and Little Girl Playing Musashi</h3>
+          <p>1841</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <h1>Wood Printing</h1>
+      <h4>Woodblock Prints in the Ukiyo-e Style</h4>
+      <button class="explore" style="vertical-align:middle">
+        <span><a href="woodprint.html">Learn More...</a></span>
+      </button>
+    </div>
+
+    <div class="blank">
+      <h1>
+        Featured works
+      </h1>
+    </div>
+
+    <div class="feature">
+      <div class="pic">
+        <img
+          src="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist4.jpg?v=1604674042910"
+        />
+        <div class="text">
+          <h3>The Inume Pass in Kai Province (Kōshū Inume tōge)</h3>
+          <p>
+            from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)
+          </p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <img
+          src="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist2.jpg?v=1604674053344"
+        />
+        <div class="text">
+          <h3>Groups of Mountain Climbers (Shojin tozan)</h3>
+          <p>
+            from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)
+          </p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <img
+          src="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist5.jpg?v=1604674038985"
+        />
+        <div class="text">
+          <h3>Young Woman and Little Girl Playing Musashi</h3>
+          <p>1841</p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <img
+          src="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist5.jpg?v=1604674038985"
+        />
+        <div class="text">
+          <h3>Young Woman and Little Girl Playing Musashi</h3>
+          <p>1841</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        © 2000–2020 The Metropolitan Museum of Art
+      </p>
+    </footer>
+
     <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+            to make it easier for folks to view source and remix 
+      <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+      <script src="https://button.glitch.me/button.js" defer></script>-->
   </body>
 </html>

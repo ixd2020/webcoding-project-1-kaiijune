@@ -1,102 +1,320 @@
 /* CSS files add styling rules to your content */
 
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
-  /*If image doesnt load the background will be lightblue. So  basically background image layer is on top of background color layer*/
-  background-color: lightblue;
-  background-image: url("https://cdn.glitch.com/c18e5b8e-b44d-423d-92b2-b06c041c304b%2FHokusaiportrait.jpg?v=1605150458739");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  font-family: "Raleway", sans-serif;
-}
-
-h1 {
-  font-style: italic;
-  color: #373fff;
-  font-family: "Josefin Sans", sans-serif;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.box {
-  float: left;
-
-  padding: 50px;
+body {
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.topnav {
+    display: flex;
+    background-color: #1b3d5f;
+    justify-content: flex-end;
 }
 
-.box {
-  float: left;
-  padding: 50px;
-  height: 300px;
+.hamburger {
+    display: none;
+    padding: 20px;
 }
 
-.redbox {
-  background-color: red;
-  /*scroll bar for long text*/
-  overflow: auto;
+i{
+  color:#fdfbe9;
 }
 
-.yellowbox {
-  background-color: yellow;
+.topnav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
 }
 
-.bluebox {
-  background-color: blue;
+.topnav ul li {
+    padding: 20px;
 }
 
-.greenbox {
-  background-color: green;
+.topnav ul li:hover {
+    background-color: #2f6a95;
 }
 
-.blackbox {
-  background-color: black;
-  color: white;
+.topnav ul li a {
+    text-decoration: none;
+    color: #fdfbe9;
 }
 
-.threecol {
-  width: 33.33%;
+.search img {
+  width: 20%;
 }
 
-.twocol {
-  width: 50%;
+
+.explore a {
+  text-decoration: none;
+  color: #FDFBE9;
 }
 
-.onecol {
+.explore {
+  display: inline-block;
+  background-color: #2F6A95;
+  border: none;
+  text-align: center;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #FDFBE9;
+  padding:10px;
+}
+
+.explore span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.explore span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.explore:hover span {
+  padding-right: 25px;
+}
+
+.explore:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.hero {
+  background-image: url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2Fartist.jpg?v=1604671994014);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro {
+  text-align: right;
+}
+
+.feature {
+  display: flex;
+  margin-bottom:100px;
+
+}
+
+.pic img {
   width: 100%;
 }
 
-a {
-  border: 1px dotted red;
-  padding: 10px;
-  text-decoration: none;
+.pic {
+  margin: 20px;
 }
 
-/* unvisited link */
-a:link {
-  color: red;
+.text {
+  margin-top: 10px;
 }
 
-/* visited link */
-a:visited {
-  color: green;
+#content {
+  text-align: center;
+  padding:20px;
 }
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
-  background-color: yellow;
+#content h1 {
+  margin: 50px;
+  
 }
 
-/* selected link */
-a:active {
-  color: blue;
+
+.video {
+  background-image: url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FIMG_0059-2.jpg?v=1605339424464);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
 }
+
+.blank {
+  text-align: center;
+  margin: 50px;
+}
+
+footer{
+  background-color:#C7DDD2;
+}
+
+footer p{
+  text-align:center;
+  padding:10px;
+  color:#1B3D5F;
+}
+
+/*artwork page*/
+
+
+.work{
+  display:flex;
+}
+
+.descript img{
+  width:100%;
+}
+
+.descript{
+  margin:20px;
+}
+
+/*woodprinting*/
+
+.top{
+  text-align:center;
+  margin:55px;
+}
+
+.history{
+  display:flex;
+  padding:50px;
+}
+
+.history img{
+  width:30%;
+}
+
+.more{
+  margin:auto;
+}
+
+.type{
+  display:flex;
+}
+
+.container{
+  margin:20px;
+}
+
+.workshop{
+  background-image: url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FIMG_0059-2.jpg?v=1605339424464);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.type h2{
+  text-align:center;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2F6A95;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.character {
+  color: #FDFBE9;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.medium{
+  margin:20px;
+  text-align:center;
+}
+
+
+
+ /*About artist page*/
+  
+  .face{
+  background-image: url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FHokusaiportrait.jpg?v=1604737313808);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  }
+
+.about{
+  display: flex;
+  background-color:#EFDCB6;
+}
+
+.date{
+  margin: auto;
+  padding:30px;
+}
+
+/*mobile reponsive*/
+@media screen and (max-width:600px) {
+
+    /*navabar index page(home)*/
+    .topnav.responsive ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+        /*bring the navbar infront becuz of position*/
+        z-index: 300;
+        top: 70px;
+        background-color:#26456D;
+
+    }
+
+    .topnav ul {
+        display: none;
+    }
+
+    .topnav {
+        position: relative;
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+ 
+  
+ 
