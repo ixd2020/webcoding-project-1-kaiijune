@@ -109,6 +109,24 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+/*Sky animation*/
+
+.sky {
+  background-repeat: repeat-x;
+  background-image: url("https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FAsset%201.png?v=1608209667174");
+  animation: movement 20s linear infinite;
+  background-size: cover;
+}
+
+@keyframes movement {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 900px 0px;
+  }
+}
+
 /* ALL unvisited link */
 a:link {
   color: #1b3d5f;
@@ -287,10 +305,6 @@ input {
 .feature {
   display: flex;
   margin-bottom: 50px;
-}
-
-#content h1{
-  
 }
 
 .pic img {
@@ -501,7 +515,7 @@ footer p {
   width: 50%;
 }
 
-/*test Page*/
+/*test Page ignore*/
 
 /*footer pond*/
 .full-landing-image {
@@ -725,7 +739,6 @@ footer p {
   /*about page*/
   .face {
     padding: 200px;
-    
   }
 
   .face h1 {
@@ -790,4 +803,3 @@ footer p {
     margin-bottom: 10px;
   }
 }
-
